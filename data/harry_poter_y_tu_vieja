@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "book": {
+    "_devComment_01": "la idea de book es que se describa el libro en particular,hay que resolver como seran las copias de esos isbn ",
+    "name": "harry potter y tu vieja",
+    "ISBN": 1234567890123,
+    "pages": 123,
+    "autor": "la escritora",
+    "idoma": "SP_ES",
+    "chapters": [{
+      "id": 1,
+      "name": "prologo",
+      "start_page": 1,
+      "end_page": 5
+    }, {
+      "id": 2,
+      "name": "capitulo 1",
+      "end_page": 8
+    }]
+  },
+  "charactes": [{
+    "id": 1,
+    "name": [
+      "harry potter",
+      "algun alias"
+    ],
+    "age": 11,
+    "initial_description": "harry es un pibe que vive con sus tios ",
+    "location": 1
+
+  },
+    {
+      "id": 2,
+      "name": ["ron", "colo"],
+      "age": 12,
+      "initial_description": "ron es pelirrojo ",
+      "illustration": ["ron_01.png"]
+    }
+  ],
+  "geolocations": [{
+    "id": 1,
+    "name": "casa de los tios",
+    "description": "la casa donde harry vive su infancia bajo una escalera",
+    "ratio": 10,
+    "unity": "m",
+    "map": 1,
+    "long": 43583135,
+    "lat": 45645645
+  },
+    {
+      "id": 2,
+      "name": "hogwarts",
+      "description": "universidad de magos",
+      "ration": 300,
+      "unity": "m",
+      "map": 2,
+      "long": 43583135,
+      "lat": 45645645
+    },
+    {
+      "id": 3,
+      "name": "estacion de tren",
+      "know_location": false
+    }
+  ],
+  "pages": [{
+    "id": 2,
+    "description": "llega carta para harry de la universidad"
+  },
+    {
+      "id": 5,
+      "description": "harry parte a la universidad",
+      "start_travel_to": 2
+    },
+    {
+      "id": 7,
+      "description_travel": "llega a ",
+      "arrive_to": 3,
+      "description_add_character": "conoce a ",
+      "add_character": 2
+    }
+  ]
+}
