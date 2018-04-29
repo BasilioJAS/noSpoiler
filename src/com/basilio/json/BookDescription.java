@@ -4,7 +4,7 @@ import java.util.List;
 
 public class BookDescription {
     String name;
-    String ISBN;
+    Long isbn;
     Integer pages;
     String author;
     String lang;
@@ -15,7 +15,7 @@ public class BookDescription {
     public String toString() {
         String output = "{";
         output += "\nname :" + name;
-        output += "\nISBN :" + ISBN;
+        output += "\nISBN :" + isbn;
         output += "\npages :" + pages;
         output += "\nauthor :" + author;
         output += "\nlang :" + lang;

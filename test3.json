@@ -7,67 +7,88 @@
     "pages": 123,
     "author": "la escritora",
     "lang": "SP_ES",
-    "testArray": ["pepe", "juan"],
-    "chapters": [{
-      "id": 1,
-      "name": "prologo",
-      "startPage": 1,
-      "endPage": 5
-    }, {
-      "id": 2,
-      "name": "capitulo 1",
-      "endPage": 8
-    }]
-  },
-  "characters": [{
-    "id": 1,
-    "names": [
-      "harry potter",
-      "algun alias"
+    "testArray": [
+      "pepe",
+      "juan"
     ],
-    "age": 11,
-    "initialDescription": "harry es un pibe que vive con sus tios ",
-    "location": 1
-
+    "chapters": [
+      {
+        "id": 1,
+        "name": "prologo",
+        "startPage": 1,
+        "endPage": 5
+      },
+      {
+        "id": 2,
+        "name": "capitulo 1",
+        "endPage": 8
+      }
+    ]
   },
+  "characters": [
+    {
+      "id": 1,
+      "names": [
+        "harry potter",
+        "algun alias"
+      ],
+      "age": 11,
+      "initialDescription": "harry es un pibe que vive con sus tios ",
+      "location": 1
+    },
     {
       "id": 2,
-      "names": ["ron", "colo"],
+      "names": [
+        "ron",
+        "colo"
+      ],
       "age": 12,
-      "initial_description": "ron es pelirrojo ",
-      "illustration": ["ron_01.png"]
+      "initialDescription": "ron es pelirrojo ",
+      "illustrations": [
+        "ron_01.png"
+      ]
     }
   ],
-  "geolocations": [{
-    "id": 1,
-    "name": "casa de los tios",
-    "description": "la casa donde harry vive su infancia bajo una escalera",
-    "ratio": 10,
-    "unity": "m",
-    "map": 1,
-    "long": 43583135,
-    "lat": 45645645
-  },
+  "geoLocs": [
+    {
+      "id": 1,
+      "names": [
+        "casa de los tios"
+      ],
+      "description": "la casa donde harry vive su infancia bajo una escalera",
+      "ratio": 10,
+      "unity": "m",
+      "mapId": 1,
+      "latitude": 45645645,
+      "longitude": 43583135,
+      "know_location": true
+    },
     {
       "id": 2,
-      "name": "hogwarts",
+      "names": [
+        "hogwarts"
+      ],
       "description": "universidad de magos",
-      "ration": 300,
+      "ratio": 300,
       "unity": "m",
-      "map": 2,
-      "long": 43583135,
-      "lat": 45645645
+      "mapId": 2,
+      "latitude": 45645645,
+      "longitude": 43583135,
+      "know_location": true
     },
     {
       "id": 3,
-      "name": "estacion de tren",
+      "names": [
+        "estacion de tren "
+      ],
       "know_location": false
     }
   ],
-  "pages": [{
-    "id": 2,
-    "description": "llega carta para harry de la universidad"
-  },
+  "pages": [
+    {
+      "id": 2,
+      "description": "llega carta para harry de la universidad"
+    },
     {
       "id": 5,
       "description": "harry parte a la universidad",

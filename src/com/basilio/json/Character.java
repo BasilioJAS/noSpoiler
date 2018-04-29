@@ -5,6 +5,7 @@ public class Character {
     String names[];
     int age;
     String initialDescription;
+    String illustrations[];
     int location;
 
 
@@ -12,7 +13,11 @@ public class Character {
     public String toString() {
         String output = "{";
         output += "\nid :" + id;
-        output += "\nnames :" + names;
+
+        output += "\nnames: {";
+        for (String name : names)
+            output += "\n\t" + name;
+        output += "\n}";
         output += "\nage :" + age;
         output += "\nlocation :" + location;
         output += "\ninitialDescription :" + initialDescription;

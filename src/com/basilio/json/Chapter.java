@@ -1,10 +1,10 @@
 package com.basilio.json;
 
 public class Chapter{
-    int id;
-    String name;
-    int startPage;
-    int endPage;
+    int id = -1;
+    String name = null;
+    int startPage = -1;
+    int endPage = -1;
 
     @Override
     public String toString() {

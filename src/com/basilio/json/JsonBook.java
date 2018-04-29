@@ -1,11 +1,10 @@
 package com.basilio.json;
 
-import com.basilio.Main;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
 
 import java.io.*;
-import java.util.Properties;
 
 public class JsonBook {
 
@@ -30,10 +29,16 @@ public class JsonBook {
         try {
             reader = new JsonReader(new FileReader(fileName));
             Book book = gson.fromJson(reader, Book.class);
-            System.out.println(book.toString());
+           // System.out.println(book.toString());
+            final Gson prettyGson = new GsonBuilder().setPrettyPrinting().create();
+            final String representacionBonita = prettyGson.toJson(book);
+            System.out.println("\n\n\n" + representacionBonita);
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
+
         /**/
     }
 }

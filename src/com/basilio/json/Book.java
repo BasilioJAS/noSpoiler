@@ -6,6 +6,8 @@ public class Book {
     Integer version;
     BookDescription bookDescription;
     List<Character> characters;
+    List<GeoLoc> geoLocs;
+
 
 
     @Override
@@ -14,6 +16,7 @@ public class Book {
         output += "\nversion " + version;
         output += "\nBookDescription " + bookDescription;
         output += "\ncharacters " + characters;
+        output += "\ngeoLocs " + geoLocs;
 
         return output;
     }
