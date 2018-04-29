@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "book": {
+  "bookDescription": {
     "_devComment_01": "la idea de book es que se describa el libro en particular,hay que resolver como seran las copias de esos isbn ",
     "name": "harry potter y tu vieja",
     "ISBN": 1234567890123,
