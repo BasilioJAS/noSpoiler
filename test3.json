@@ -1,37 +1,38 @@
 {
   "version": 1,
   "bookDescription": {
-    "_devComment_01": "la idea de book es que se describa el libro en particular,hay que resolver como seran las copias de esos isbn ",
+    "devComment_01": "la idea de book es que se describa el libro en particular,hay que resolver como seran las copias de esos isbn ",
     "name": "harry potter y tu vieja",
-    "ISBN": 1234567890123,
+    "isbn": 1234567890123,
     "pages": 123,
-    "autor": "la escritora",
-    "idoma": "SP_ES",
+    "author": "la escritora",
+    "lang": "SP_ES",
+    "testArray": ["pepe", "juan"],
     "chapters": [{
       "id": 1,
       "name": "prologo",
-      "start_page": 1,
-      "end_page": 5
+      "startPage": 1,
+      "endPage": 5
     }, {
       "id": 2,
       "name": "capitulo 1",
-      "end_page": 8
+      "endPage": 8
     }]
   },
-  "charactes": [{
+  "characters": [{
     "id": 1,
-    "name": [
+    "names": [
       "harry potter",
       "algun alias"
     ],
     "age": 11,
-    "initial_description": "harry es un pibe que vive con sus tios ",
+    "initialDescription": "harry es un pibe que vive con sus tios ",
     "location": 1
 
   },
     {
       "id": 2,
-      "name": ["ron", "colo"],
+      "names": ["ron", "colo"],
       "age": 12,
       "initial_description": "ron es pelirrojo ",
       "illustration": ["ron_01.png"]
