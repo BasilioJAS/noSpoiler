@@ -8,7 +8,6 @@ public class BookDescription {
     Integer pages;
     String author;
     String lang;
-    String[] testArray;
     List<Chapter> chapters;
 
     @Override

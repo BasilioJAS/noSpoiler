@@ -1,24 +1,22 @@
 package com.basilio;
 
-import com.basilio.json.JsonBook;
+import com.basilio.menus.MainMenu;
+
+import javax.swing.*;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        JsonBook _Json_book = new JsonBook();
 
-//        try {
-//  //          Reader reader = new InputStreamReader(Main.class.getResourceAsStream("/Server1.json"), "UTF-8");
-//
-//            /*Gson gson = new GsonBuilder().create();
-//            Person p = gson.fromJson(reader, Person.class);
-//            System.out.println(p);
-//*/
-//
-//        } catch (UnsupportedEncodingException e) {
-//            e.printStackTrace();
-//        });
+
+        JFrame frame = new JFrame("App");
+        frame.setContentPane(new MainMenu().MainMenuPanel);
+//        frame.setContentPane(new MainMenu().MainMenuPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+
 
     }
 }
